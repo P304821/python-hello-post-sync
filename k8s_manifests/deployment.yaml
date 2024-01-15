@@ -4,7 +4,7 @@ metadata:
   name: hello-python-deployment
   labels:
     app: hello-python-deployment
-    cup: coffee
+    cup: coffee-1-2-3-3-3
 spec:
   replicas: 3
   selector:
