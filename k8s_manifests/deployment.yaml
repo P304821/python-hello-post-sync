@@ -20,11 +20,11 @@ spec:
         image: danielrcode/applications:latest
         imagePullPolicy: IfNotPresent
         volumeMounts:
-        - name: pvc_mount_test
+        - name: pvc-mount-test
           mountPath: /data
         ports:
         - containerPort: 5000
       volumes:
-      - name: pvc_mount_test
+      - name: pvc-mount-test
         presistentVolumeClaim:
           claimName: local-path-pvc
