@@ -26,5 +26,5 @@ spec:
         - containerPort: 5000
       volumes:
       - name: pvc-mount-test
-        presistentVolumeClaim:
+        persistentVolumeClaim:
           claimName: local-path-pvc
