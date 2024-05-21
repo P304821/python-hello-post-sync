@@ -1,0 +1,13 @@
+name: API Triggered Workflow
+
+on:
+  repository_dispatch:
+    types: [argocd-event]
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print message
+      run: echo "this is from argocd through the github api"
