@@ -19,12 +19,5 @@ spec:
       - name: hello-python-container
         image: danielrcode/applications:latest
         imagePullPolicy: IfNotPresent
-        volumeMounts:
-        - name: pvc-mount-test
-          mountPath: /data
         ports:
         - containerPort: 5000
-      volumes:
-      - name: pvc-mount-test
-        persistentVolumeClaim:
-          claimName: local-path-pvc
