@@ -92,10 +92,10 @@ spec:
         print("Response Status Code:", response_trigger_workflow.status_code)
         EOF
 
-        volumeMounts:
-        - name: github-app-secret
-          mountPath: /mnt/secrets/github-app-secret
-          readOnly: true
+      volumeMounts:
+      - name: github-app-secret
+        mountPath: /mnt/secrets/github-app-secret
+        readOnly: true
       restartPolicy: Never
       volumes:
       - name: github-app-secret
